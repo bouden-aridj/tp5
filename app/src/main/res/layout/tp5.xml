@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose your favourite language "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/languageGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <RadioGroup
+        android:id="@+id/languageGroup"
+        android:layout_width="368dp"
+        android:layout_height="240dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="90dp">
+
+        <RadioButton
+            android:id="@+id/radiojava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="java" />
+
+        <RadioButton
+            android:id="@+id/radioJavaScript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JavaScript" />
+
+        <RadioButton
+            android:id="@+id/radioDart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dart" />
+
+        <RadioButton
+            android:id="@+id/radioPython"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Python" />
+
+        <RadioButton
+            android:id="@+id/radioCSharp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C#" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languageGroup"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
